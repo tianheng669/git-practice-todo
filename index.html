@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git实践 - 待办事项应用</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>待办事项列表</h1>
+        <p>使用这个简单应用练习Git操作</p>
+        
+        <div class="todo-input">
+            <input type="text" id="newTodo" placeholder="添加新的待办事项...">
+            <button id="addBtn"><i class="fas fa-plus"></i> 添加</button>
+        </div>
+        
+        <div class="todo-filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="active">未完成</button>
+            <button class="filter-btn" data-filter="completed">已完成</button>
+        </div>
+        
+        <ul id="todoList" class="todo-list">
+            <!-- 待办事项将通过JavaScript动态添加 -->
+        </ul>
+        
+        <div class="todo-stats">
+            <span id="todoCount">0</span> 个项目未完成
+            <button id="clearCompleted"><i class="fas fa-trash"></i> 清除已完成</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
